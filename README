@@ -20,7 +20,10 @@ Win32:
     nmake -f Makefile.nt
 
     (or use the MSVC++ project files in the Win32 directory)
-
+Exception when make
+    没有规则可以创建目标“am--refresh”。 停止
+    solution: 
+        在/include/fcgio.h文件中加上 #include <cstdio>，然后./configure make 就通过了
 
 CHANGES
 -------
